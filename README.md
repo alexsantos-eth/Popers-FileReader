@@ -25,7 +25,6 @@ for node_mudules Dependencies are:
 ```
 "dependencies": {
     "bootstrap": "^4.1.1",
-    "get-image-colors": "^1.8.1",
     "jquery": "^3.3.1",
     "rimraf": "^2.6.2"
   },
