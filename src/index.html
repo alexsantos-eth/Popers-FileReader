@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popers (beta v0.0081)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./colorpicker/css/colorpicker.css">
+    <link href="./icon/icons.css" rel="stylesheet">
+</head>
+<body>
+    <div id="popsMenu">
+            <div id="intr">
+                <h1 class="titleS">
+                Drag and Drop
+                    <p>
+                       Select your main folder for projects.
+                    </p>
+                    <button class="btn" id="ssl">Select folder</button>
+                </h1>  
+            </div>
+            <div id="ctr">
+                <h1><i class="iconSel material-icons">radio_button_checked</i></h1>
+            </div>
+        <div id="listC"></div>
+        <!-- SystemButtons -->
+        <div id="rel">
+            <div id="relShadow"></div>
+        </div>
+        <strong id="reus">
+            Reload 
+            <i href="#" class="material-icons reload" id="setRel">loop</i>
+        </strong>
+        <div id="returnBox">
+            <div id="ret"></div>
+            <div id="path">
+            </div>
+            <i class="material-icons" id="return">chevron_left</i>  
+        </div>  
+
+        <img src="./img/logo.png" class="title"></img>
+        <div class="box">
+            <div id="shadowBox"></div>
+        </div>
+   
+        <div class="toolBar">
+                <div id="addBox"></div>
+            <ul>
+                <li class="active" id="addS"><i class="material-icons">add</i></li>
+                <li class="disabled" id="edits"><a href="#">Edit<i class="material-icons">code</i></a></li>
+                <li class="disabled" id="del"><a href="#" >Delete<i class="material-icons">clear</i></a></li>
+                <li class="disabled" id="infoS"><a href="#" >About<i class="material-icons">info_outline</i></a></li>
+            </ul>
+            <h1 id="dirContents">
+                Desktop
+            </h1>
+            <div id="shadowToolbar"></div>
+        </div>
+       
+        
+        <div id="navBar">
+            <i>Project Manager</i>
+        </div>
+    </div>
+    <div class="modal fade" id="warningDelete" tabindex="-1" role="dialog" aria-labelledby="warningDelete" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Are you sure?</h5>
+              <button type="button" class="close closeD" id="closeBtn" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                We are going to delete this permanently, really are you sure? :v.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="closeD btn btn-success" >No</button>
+              <button type="button" class="btn btn-danger" id="delYes">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="prefs">
+          <div id="shadowCard"></div>
+          <div id="mainCard">
+              <div id="colorBox">
+                    <h2>Main Color</h2>
+                    <hr>
+                    <div id="selectionColor">
+                        <div id="pink">
+                            <strong>Color 1</strong>
+                            <label for="pinkS"></label>
+                            <input type="text" name="pinkS" id="pinkS">
+                        </div>   
+                        <div id="blue">
+                                <strong>Color 2</strong>
+                                <label for="blueS"></label>
+                                <input type="text" name="blueS" id="blueS" value="#4cdef5">
+                        </div>
+                        <div id="green">
+                                <strong>Color 3</strong> 
+                                <label for="greenS"></label>
+                                <input type="text" name="greenS" id="greenS" value="#00f560">
+                        </div>
+                        <div id="purple">
+                                <strong>Color 4</strong> 
+                                <label for="purpleS"></label>
+                                <input type="text" name="purpleS" id="purpleS" value="#eb50fd">
+                        </div>   
+                        <div id="freeColor">
+                                <strong>Your color</strong> 
+                                <label for="freeS"></label>
+                                <input type="text" name="freeS" id="freeS" value="#ffffff">
+                        </div>            
+                    </div>
+            </div>
+            <div id="apply">
+                <button class="btn btn-danger" id="hidePrefs">Cancel</button>
+                <button class="btn btn-success" id="savePrefs">Apply</button>
+            </div>
+          </div>
+      </div>
+<!-- imageBox -->
+      <webview id="imageBox" src="https://www.github.com/" webpreferences="nativeWindowOpen=yes"></webview>
+</body>
+<script>
+    window.jQuery = window.$ = require('jquery');
+</script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./colorpicker/js/colorpicker.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
