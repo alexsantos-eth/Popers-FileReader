@@ -12,3 +12,25 @@ The best custom file explorer for MacOs, Windows, Android and iPhone.
 * #### So Beautiful
 
 ![alt text](https://raw.githubusercontent.com/alexsan134/Popers-FileReader/master/CustomColors.png)
+
+### And animated ;) 
+
+![alt text](https://raw.githubusercontent.com/alexsan134/Popers-FileReader/master/AnimatedIcons.png)
+
+
+### Please Help Us
+Download the project and colaborate with our team,
+for node_mudules Dependencies are:
+
+```
+"dependencies": {
+    "bootstrap": "^4.1.1",
+    "get-image-colors": "^1.8.1",
+    "jquery": "^3.3.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "electron": "^2.0.3",
+    "electron-packager": "^12.1.0"
+  }
+```
