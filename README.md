@@ -1,6 +1,6 @@
 # Popers-FileReader
 The best custom file explorer for MacOs, Windows, Android and iPhone.
-## You cand [Download](https://drive.google.com/file/d/1XOL-0cXuRk9PO2_iM_LsbWRSit4Df9m_/view?usp=sharing) here
+## You can [Download](https://drive.google.com/file/d/1XOL-0cXuRk9PO2_iM_LsbWRSit4Df9m_/view?usp=sharing) here
 
 ![alt text](https://raw.githubusercontent.com/alexsan134/Popers-FileReader/master/MainScreen.png)
 
